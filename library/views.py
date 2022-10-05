@@ -7,3 +7,4 @@ from .models import Project
 class ProjectViewSet(viewsets.ModelViewSet):
     queryset=Project.objects.all().order_by('id')
     serializer_class=ProjectSerializer
+    http_method_names = ['get']
