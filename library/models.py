@@ -30,15 +30,16 @@ class Project(models.Model):
     Leader_name=models.CharField(max_length=50,null=True)
     Leader_email=models.EmailField(max_length = 254,null=True)
     Internal_guide=models.CharField(max_length=50,null=True)
-    
-   
+    Poster_URL=models.URLField(max_length=200,null=True)
+    Video_URL=models.URLField(max_length=200,null=True)
+    Document_URL=models.URLField(max_length=200,null=True)
 
     def __str__(self):
         return self.Project_name
 
     class Meta:
-        verbose_name = "Projects_2019-20"
-        verbose_name_plural = "Projects_2019-20"
+        verbose_name = "Projects_2019-2020"
+        verbose_name_plural = "Projects_2019-2020"
 
 class Project_second(models.Model):
     id=models.PositiveIntegerField(primary_key=True)
@@ -59,6 +60,9 @@ class Project_second(models.Model):
     Leader_name=models.CharField(max_length=50,null=True)
     Leader_email=models.EmailField(max_length = 254,null=True)
     Internal_guide=models.CharField(max_length=50,null=True)
+    Poster_URL=models.URLField(max_length=200,null=True)
+    Video_URL=models.URLField(max_length=200,null=True)
+    Document_URL=models.URLField(max_length=200,null=True)
     
    
 
@@ -66,8 +70,8 @@ class Project_second(models.Model):
         return self.Project_name
 
     class Meta:
-        verbose_name = "Projects_2020-21"
-        verbose_name_plural = "Projects_2020-21"
+        verbose_name = "Projects_2020-2021"
+        verbose_name_plural = "Projects_2020-2021"
 
 
    
