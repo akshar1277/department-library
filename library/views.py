@@ -13,3 +13,6 @@ class Project_secondViewSet(viewsets.ModelViewSet):
     queryset=Project_second.objects.all().order_by('id')
     serializer_class=Project_secondSerializer
     http_method_names = ['get']
+
+
+    
