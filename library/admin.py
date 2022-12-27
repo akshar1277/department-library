@@ -4,10 +4,10 @@ from import_export.admin import ImportExportModelAdmin
 
 # Register your models here.
 class ProjectAdmin(ImportExportModelAdmin,admin.ModelAdmin):
-    list_display=['id','Batch','Project_id','Project_type','Project_name','Abstract','Project_area','Langauge','Company_name','Leader_enroll','Leader_name','Leader_email','Internal_guide','Poster_URL','Video_URL','Document_URL']
+    list_display=['id','Batch','Project_id','Project_type','Project_name','Abstract','Project_area','Langauge','Company_name','Leader_enroll','Leader_name','Leader_email','Internal_guide','Poster_URL','Video_URL','Document_URL','Preview_URL']
 
 class Project_secondAdmin(ImportExportModelAdmin,admin.ModelAdmin):
-    list_display=['id','Batch','Project_id','Project_type','Project_name','Abstract','Project_area','Langauge','Company_name','Leader_enroll','Leader_name','Leader_email','Internal_guide','Poster_URL','Video_URL','Document_URL']
+    list_display=['id','Batch','Project_id','Project_type','Project_name','Abstract','Project_area','Langauge','Company_name','Leader_enroll','Leader_name','Leader_email','Internal_guide','Poster_URL','Video_URL','Document_URL','Preview_URL']
 
 
 admin.site.register(Project,ProjectAdmin)

@@ -33,6 +33,7 @@ class Project(models.Model):
     Poster_URL=models.URLField(max_length=200,null=True)
     Video_URL=models.URLField(max_length=200,null=True)
     Document_URL=models.URLField(max_length=200,null=True)
+    Preview_URL=models.URLField(max_length=200,null=True)
 
     def __str__(self):
         return self.Project_name
@@ -63,6 +64,7 @@ class Project_second(models.Model):
     Poster_URL=models.URLField(max_length=200,null=True)
     Video_URL=models.URLField(max_length=200,null=True)
     Document_URL=models.URLField(max_length=200,null=True)
+    Preview_URL=models.URLField(max_length=200,null=True)
     
    
 
